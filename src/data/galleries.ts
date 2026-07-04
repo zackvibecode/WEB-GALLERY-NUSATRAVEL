@@ -90,12 +90,12 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/peserta-01.jpg",
         category: "Gambar Peserta",
-        caption: "Gambar kumpulan peserta Nusatravel di Masjid 99 Kubah",
+        caption: "Gambar kumpulan peserta Nusatravel di ladang teh",
       },
       {
         src: "/gallery/id-makassar/peserta-02.jpg",
         category: "Gambar Peserta",
-        caption: "Peserta bergambar di hadapan Masjid 99 Kubah",
+        caption: "Peserta bergambar di Masjid 99 Kubah",
       },
       {
         src: "/gallery/id-makassar/peserta-03.jpg",
@@ -105,32 +105,72 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/peserta-04.jpg",
         category: "Gambar Peserta",
-        caption: "Peserta menikmati pemandangan sepanjang trip",
+        caption: "Gambar kumpulan peserta Trip No 02",
       },
       {
         src: "/gallery/id-makassar/peserta-05.jpg",
         category: "Gambar Peserta",
-        caption: "Peserta menaiki bot di Rammang-Rammang",
+        caption: "Peserta menikmati pemandangan ladang teh",
       },
       {
         src: "/gallery/id-makassar/peserta-06.jpg",
         category: "Gambar Peserta",
-        caption: "Gambar kumpulan peserta semasa trip bot malam",
+        caption: "Gambar kumpulan di Museum Balla Lompoa",
       },
       {
         src: "/gallery/id-makassar/peserta-07.jpg",
         category: "Gambar Peserta",
-        caption: "Peserta menikmati sunset di atas bot",
+        caption: "Peserta di Museum Balla Lompoa, Gowa",
       },
       {
         src: "/gallery/id-makassar/peserta-08.jpg",
         category: "Gambar Peserta",
-        caption: "Peserta semasa cruise di Makassar",
+        caption: "Gambar kumpulan di Pantai Losari",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-09.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta di taman bunga Gowa",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-10.jpg",
+        category: "Gambar Peserta",
+        caption: "Moment peserta di kawasan bunga",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-11.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta menaiki bot berwarna-warni",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-12.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta bersedia untuk lawatan bot",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-13.jpg",
+        category: "Gambar Peserta",
+        caption: "Suasana peserta sepanjang perjalanan bot",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-14.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta semasa cruise Phinisi",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-15.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta menikmati trip bot Makassar",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-16.jpg",
+        category: "Gambar Peserta",
+        caption: "Gambar kumpulan di atas bot Phinisi",
       },
       {
         src: "/gallery/id-makassar/tempat-lawatan-01.jpg",
         category: "Tempat Lawatan",
-        caption: "Lawatan ke Kampoeng Karst Rammang-Rammang, Maros",
+        caption: "Lawatan ke Desa Wisata Rammang-Rammang",
       },
       {
         src: "/gallery/id-makassar/tempat-lawatan-02.jpg",
@@ -140,7 +180,22 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/tempat-lawatan-03.jpg",
         category: "Tempat Lawatan",
+        caption: "Lawatan bot di kawasan gua karst",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-04.jpg",
+        category: "Tempat Lawatan",
         caption: "Lawatan bot di kawasan hijau Makassar",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-05.jpg",
+        category: "Tempat Lawatan",
+        caption: "Lawatan ke taman bunga di Gowa",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-06.jpg",
+        category: "Tempat Lawatan",
+        caption: "Tempat menarik untuk bergambar bersama peserta",
       },
       {
         src: "/gallery/id-makassar/makanan-01.jpg",
@@ -150,26 +205,72 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/makanan-02.jpg",
         category: "Makanan Halal",
-        caption: "Makanan disediakan semasa trip bot Makassar",
+        caption: "Makanan disediakan semasa trip bot malam",
       },
       {
         src: "/gallery/id-makassar/suasana-01.jpg",
         category: "Suasana Trip",
-        caption: "Suasana cruise di atas bot Phinisi",
+        caption: "Suasana perjalanan bersama peserta",
       },
       {
         src: "/gallery/id-makassar/suasana-02.jpg",
         category: "Suasana Trip",
-        caption: "Suasana golden hour semasa trip bot",
+        caption: "Moment sepanjang trip Makassar",
       },
       {
         src: "/gallery/id-makassar/suasana-03.jpg",
         category: "Suasana Trip",
-        caption: "Suasana perjalanan bersama peserta Nusatravel",
+        caption: "Suasana trip bersama team Nusatravel",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-04.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana lawatan peserta",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-05.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana di Rammang-Rammang",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-06.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana perjalanan sepanjang trip",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-07.jpg",
+        category: "Suasana Trip",
+        caption: "Moment indah sepanjang perjalanan",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-08.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana trip Makassar bersama peserta",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-09.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana lawatan dan aktiviti trip",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-10.jpg",
+        category: "Suasana Trip",
+        caption: "Moment bersama peserta Nusatravel",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-11.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana perjalanan yang menyeronokkan",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-12.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana trip penuh kenangan",
       },
     ],
     testimonials: defaultTestimonials,
   },
+
 
   {
     slug: "id-transjava",
