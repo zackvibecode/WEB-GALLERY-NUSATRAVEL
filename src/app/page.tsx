@@ -16,11 +16,11 @@ export default function HomePage() {
 
       <main className="flex flex-1 items-center justify-center px-4 py-12 sm:px-6 sm:py-20">
         <div className="mx-auto w-full max-w-xl text-center">
-          <span className="inline-flex items-center rounded-full border border-[#e5e7eb] bg-white px-3 py-1 text-xs font-medium text-[#6b7280]">
+          <span className="inline-flex items-center rounded-full border border-[#e5e7eb] bg-white px-3 py-1 text-xs font-medium uppercase tracking-wide text-[#6b7280]">
             Trip Gallery
           </span>
 
-          <h1 className="mt-5 text-3xl font-semibold tracking-tight text-[#111111] sm:text-4xl lg:text-5xl">
+          <h1 className="mt-5 text-3xl font-extrabold uppercase tracking-tight text-[#111111] sm:text-4xl lg:text-5xl">
             Nusatravel Trip Gallery
           </h1>
 

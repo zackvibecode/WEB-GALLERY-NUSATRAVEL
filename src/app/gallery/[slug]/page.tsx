@@ -8,6 +8,7 @@ import TrustSection from "@/components/TrustSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import ConsultantCard from "@/components/ConsultantCard";
+import TikTokEmbed from "@/components/TikTokEmbed";
 import { getAllGalleries, getGalleryBySlug } from "@/lib/gallery";
 
 type PageProps = {
@@ -61,20 +62,20 @@ export default async function GalleryDetailPage({ params }: PageProps) {
         {/* Hero */}
         <section className="border-b border-[#e5e7eb]">
           <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-16">
-            <div className="order-2 lg:order-1">
-              <span className="inline-flex items-center rounded-md bg-[#fef2f2] px-2.5 py-1 text-xs font-semibold tracking-wide text-[#dc2626]">
+            <div className="order-2 text-center lg:order-1">
+              <span className="inline-flex items-center rounded-md bg-[#fef2f2] px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-[#dc2626]">
                 {gallery.code}
               </span>
 
-              <h1 className="mt-3 text-2xl font-semibold tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
+              <h1 className="mt-3 text-2xl font-extrabold uppercase tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
                 {gallery.title}
               </h1>
 
-              <p className="mt-3 max-w-lg text-sm leading-relaxed text-[#6b7280] sm:text-base">
+              <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#6b7280] sm:text-base">
                 {gallery.description}
               </p>
 
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap justify-center gap-2">
                 {trustBadges.map((badge) => (
                   <span
                     key={badge}
@@ -85,7 +86,7 @@ export default async function GalleryDetailPage({ params }: PageProps) {
                 ))}
               </div>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <WhatsAppButton
                   text={gallery.whatsappText}
                   fullWidth
@@ -117,6 +118,16 @@ export default async function GalleryDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
+
+        {/* TikTok Video */}
+        {gallery.tiktokVideoId ? (
+          <section className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-14">
+            <TikTokEmbed
+              videoId={gallery.tiktokVideoId}
+              title={`Video Trip ${gallery.title}`}
+            />
+          </section>
+        ) : null}
 
         {/* Gallery */}
         <section className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-14">

@@ -17,6 +17,8 @@ export type GalleryPackage = {
   description: string;
   coverImage: string;
   pdfUrl?: string;
+  tiktokVideoId?: string;
+  tiktokUrl?: string;
   whatsappText: string;
   images: GalleryImage[];
   testimonials?: string[];
@@ -71,10 +73,19 @@ function createPackageImages(
 }
 
 const defaultTestimonials = [
-  "Trip tersusun dan team banyak membantu sepanjang perjalanan.",
-  "Makanan mudah dan perjalanan sesuai untuk bawa family.",
-  "Pertama kali travel bersama Nusatravel, urusan terasa lebih mudah.",
+  "Trip tersusun dan team banyak membantu sepanjang perjalanan 👍",
+  "Makanan senang, sesuai bawa family. Recommended!",
+  "First time travel dgn Nusatravel, urusan memang mudah je 😊",
 ];
+
+const makassarTestimonials = [
+  "Pakej ni paling best! Dapat free naik cruise tengok sunset, makan minum petang sambil dinner. View cantik gila 🌅",
+  "Dapat tengok Masjid 99 Kubah, tour leader pun bagus sangat bantu sepanjang trip 👍",
+  "Makanan mudah dan sedap, sesuai bawa family. Recommended!",
+];
+
+
+
 
 export const galleries: GalleryPackage[] = [
   {
@@ -84,14 +95,17 @@ export const galleries: GalleryPackage[] = [
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana trip Makassar bersama Nusatravel.",
     coverImage: "/gallery/id-makassar/cover.jpg",
+    tiktokVideoId: "7654483683318975760",
+    tiktokUrl: "https://vt.tiktok.com/ZSCVWnTmJ/",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej ID Makassar. Boleh share tarikh dan harga terkini?",
     images: [
       {
         src: "/gallery/id-makassar/peserta-01.jpg",
         category: "Gambar Peserta",
-        caption: "Gambar kumpulan peserta Nusatravel di ladang teh",
+        caption: "Gambar kumpulan peserta di Rammang-Rammang",
       },
+
       {
         src: "/gallery/id-makassar/peserta-02.jpg",
         category: "Gambar Peserta",
@@ -105,12 +119,7 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/peserta-04.jpg",
         category: "Gambar Peserta",
-        caption: "Gambar kumpulan peserta Trip No 02",
-      },
-      {
-        src: "/gallery/id-makassar/peserta-05.jpg",
-        category: "Gambar Peserta",
-        caption: "Peserta menikmati pemandangan ladang teh",
+        caption: "Peserta menikmati suasana taman berawan",
       },
       {
         src: "/gallery/id-makassar/peserta-06.jpg",
@@ -128,16 +137,6 @@ export const galleries: GalleryPackage[] = [
         caption: "Gambar kumpulan di Pantai Losari",
       },
       {
-        src: "/gallery/id-makassar/peserta-09.jpg",
-        category: "Gambar Peserta",
-        caption: "Peserta di taman bunga Gowa",
-      },
-      {
-        src: "/gallery/id-makassar/peserta-10.jpg",
-        category: "Gambar Peserta",
-        caption: "Moment peserta di kawasan bunga",
-      },
-      {
         src: "/gallery/id-makassar/peserta-11.jpg",
         category: "Gambar Peserta",
         caption: "Peserta menaiki bot berwarna-warni",
@@ -151,11 +150,6 @@ export const galleries: GalleryPackage[] = [
         src: "/gallery/id-makassar/peserta-13.jpg",
         category: "Gambar Peserta",
         caption: "Suasana peserta sepanjang perjalanan bot",
-      },
-      {
-        src: "/gallery/id-makassar/peserta-14.jpg",
-        category: "Gambar Peserta",
-        caption: "Peserta semasa cruise Phinisi",
       },
       {
         src: "/gallery/id-makassar/peserta-15.jpg",
@@ -178,24 +172,14 @@ export const galleries: GalleryPackage[] = [
         caption: "Bot menyusuri kawasan karst Rammang-Rammang",
       },
       {
-        src: "/gallery/id-makassar/tempat-lawatan-03.jpg",
-        category: "Tempat Lawatan",
-        caption: "Lawatan bot di kawasan gua karst",
-      },
-      {
         src: "/gallery/id-makassar/tempat-lawatan-04.jpg",
         category: "Tempat Lawatan",
         caption: "Lawatan bot di kawasan hijau Makassar",
       },
       {
-        src: "/gallery/id-makassar/tempat-lawatan-05.jpg",
-        category: "Tempat Lawatan",
-        caption: "Lawatan ke taman bunga di Gowa",
-      },
-      {
         src: "/gallery/id-makassar/tempat-lawatan-06.jpg",
         category: "Tempat Lawatan",
-        caption: "Tempat menarik untuk bergambar bersama peserta",
+        caption: "Lawatan ke taman bunga di Gowa",
       },
       {
         src: "/gallery/id-makassar/makanan-01.jpg",
@@ -211,11 +195,6 @@ export const galleries: GalleryPackage[] = [
         src: "/gallery/id-makassar/suasana-01.jpg",
         category: "Suasana Trip",
         caption: "Suasana perjalanan bersama peserta",
-      },
-      {
-        src: "/gallery/id-makassar/suasana-02.jpg",
-        category: "Suasana Trip",
-        caption: "Moment sepanjang trip Makassar",
       },
       {
         src: "/gallery/id-makassar/suasana-03.jpg",
@@ -242,34 +221,10 @@ export const galleries: GalleryPackage[] = [
         category: "Suasana Trip",
         caption: "Moment indah sepanjang perjalanan",
       },
-      {
-        src: "/gallery/id-makassar/suasana-08.jpg",
-        category: "Suasana Trip",
-        caption: "Suasana trip Makassar bersama peserta",
-      },
-      {
-        src: "/gallery/id-makassar/suasana-09.jpg",
-        category: "Suasana Trip",
-        caption: "Suasana lawatan dan aktiviti trip",
-      },
-      {
-        src: "/gallery/id-makassar/suasana-10.jpg",
-        category: "Suasana Trip",
-        caption: "Moment bersama peserta Nusatravel",
-      },
-      {
-        src: "/gallery/id-makassar/suasana-11.jpg",
-        category: "Suasana Trip",
-        caption: "Suasana perjalanan yang menyeronokkan",
-      },
-      {
-        src: "/gallery/id-makassar/suasana-12.jpg",
-        category: "Suasana Trip",
-        caption: "Suasana trip penuh kenangan",
-      },
     ],
-    testimonials: defaultTestimonials,
+    testimonials: makassarTestimonials,
   },
+
 
 
   {

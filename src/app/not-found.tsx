@@ -8,7 +8,7 @@ export default function NotFound() {
       <main className="flex flex-1 items-center justify-center px-4 py-16">
         <div className="mx-auto max-w-md text-center">
           <p className="text-sm font-medium text-[#9ca3af]">404</p>
-          <h1 className="mt-2 text-2xl font-semibold tracking-tight text-[#111111]">
+          <h1 className="mt-2 text-2xl font-extrabold uppercase tracking-tight text-[#111111]">
             Halaman tidak dijumpai
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-[#6b7280]">

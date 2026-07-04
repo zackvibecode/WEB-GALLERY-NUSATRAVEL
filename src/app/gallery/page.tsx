@@ -20,7 +20,7 @@ export default function GalleryListPage() {
       <main className="flex-1 px-4 py-8 sm:px-6 sm:py-12">
         <div className="mx-auto w-full max-w-[900px]">
           <div className="mb-8 text-center sm:mb-10">
-            <h1 className="text-2xl font-semibold tracking-tight text-[#111111] sm:text-3xl">
+            <h1 className="text-2xl font-extrabold uppercase tracking-tight text-[#111111] sm:text-3xl">
               Sila Pilih Pakej Pilihan Anda 👇
             </h1>
             <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#6b7280] sm:text-base">
