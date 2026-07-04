@@ -91,14 +91,14 @@ export const galleries: GalleryPackage[] = [
   {
     slug: "id-makassar",
     code: "ID",
-    title: "ID Makassar",
+    title: "Makassar",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana trip Makassar bersama Nusatravel.",
     coverImage: "/gallery/id-makassar/cover.jpg",
     tiktokVideoId: "7654483683318975760",
     tiktokUrl: "https://vt.tiktok.com/ZSCVWnTmJ/",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej ID Makassar. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Makassar. Boleh share tarikh dan harga terkini?",
     images: [
       {
         src: "/gallery/id-makassar/peserta-01.jpg",
@@ -174,22 +174,22 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/tempat-lawatan-04.jpg",
         category: "Tempat Lawatan",
-        caption: "Lawatan bot di kawasan hijau Makassar",
+        caption: "Lawatan bot di Rammang-Rammang",
       },
       {
         src: "/gallery/id-makassar/tempat-lawatan-06.jpg",
         category: "Tempat Lawatan",
-        caption: "Lawatan ke taman bunga di Gowa",
+        caption: "Taman Bunga Marlino Highland",
       },
       {
         src: "/gallery/id-makassar/makanan-01.jpg",
         category: "Makanan Halal",
-        caption: "Jamuan bersama peserta di atas bot",
+        caption: "Minum petang & makan malam di kapal Phinisi",
       },
       {
         src: "/gallery/id-makassar/makanan-02.jpg",
         category: "Makanan Halal",
-        caption: "Makanan disediakan semasa trip bot malam",
+        caption: "Minum petang & makan malam di kapal Phinisi",
       },
       {
         src: "/gallery/id-makassar/suasana-01.jpg",
@@ -209,7 +209,7 @@ export const galleries: GalleryPackage[] = [
       {
         src: "/gallery/id-makassar/suasana-05.jpg",
         category: "Suasana Trip",
-        caption: "Suasana di Rammang-Rammang",
+        caption: "Suasana di Masjid 99 Kubah",
       },
       {
         src: "/gallery/id-makassar/suasana-06.jpg",
@@ -230,108 +230,108 @@ export const galleries: GalleryPackage[] = [
   {
     slug: "id-transjava",
     code: "ID",
-    title: "ID TransJava",
+    title: "TransJava",
     description:
       "Lihat suasana perjalanan TransJava, gambar peserta dan tempat lawatan bersama Nusatravel.",
     coverImage: "/gallery/id-transjava/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej ID TransJava. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej TransJava. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("id-transjava", "TransJava"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "cn-china-4-wilayah",
     code: "CN",
-    title: "CN China 4 Wilayah",
+    title: "China 4 Wilayah",
     description:
       "Lihat gambar peserta dan suasana trip China 4 Wilayah bersama Nusatravel.",
     coverImage: "/gallery/cn-china-4-wilayah/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej CN China 4 Wilayah. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej China 4 Wilayah. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-china-4-wilayah", "China 4 Wilayah"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "cn-wilayah-yunnan",
     code: "CN",
-    title: "CN Wilayah Yunnan",
+    title: "Wilayah Yunnan",
     description:
       "Lihat suasana trip Yunnan, tempat lawatan dan gambar peserta bersama Nusatravel.",
     coverImage: "/gallery/cn-wilayah-yunnan/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej CN Wilayah Yunnan. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Wilayah Yunnan. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-wilayah-yunnan", "Yunnan"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "cn-sichuan-chengdu",
     code: "CN",
-    title: "CN Sichuan Chengdu",
+    title: "Sichuan Chengdu",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana perjalanan Sichuan Chengdu bersama Nusatravel.",
     coverImage: "/gallery/cn-sichuan-chengdu/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej CN Sichuan Chengdu. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Sichuan Chengdu. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-sichuan-chengdu", "Sichuan Chengdu"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "cn-xian-lanzhou",
     code: "CN",
-    title: "CN Xian Lanzhou",
+    title: "Xian Lanzhou",
     description:
       "Lihat suasana trip Xian Lanzhou, gambar peserta dan tempat lawatan bersama Nusatravel.",
     coverImage: "/gallery/cn-xian-lanzhou/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej CN Xian Lanzhou. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Xian Lanzhou. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-xian-lanzhou", "Xian Lanzhou"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "vn-trans-vietnam",
     code: "VN",
-    title: "VN Trans Vietnam",
+    title: "Trans Vietnam",
     description:
       "Lihat gambar peserta dan suasana perjalanan Trans Vietnam bersama Nusatravel.",
     coverImage: "/gallery/vn-trans-vietnam/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej VN Trans Vietnam. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Trans Vietnam. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("vn-trans-vietnam", "Trans Vietnam"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "th-thailand-5-wilayah",
     code: "TH",
-    title: "TH Thailand 5 Wilayah",
+    title: "Thailand 5 Wilayah",
     description:
       "Lihat suasana trip Thailand 5 Wilayah, gambar peserta dan tempat lawatan bersama Nusatravel.",
     coverImage: "/gallery/th-thailand-5-wilayah/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej TH Thailand 5 Wilayah. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Thailand 5 Wilayah. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("th-thailand-5-wilayah", "Thailand 5 Wilayah"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "tr-turkey-classic",
     code: "TR",
-    title: "TR Turkey Classic",
+    title: "Turkey Classic",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana perjalanan Turkey Classic bersama Nusatravel.",
     coverImage: "/gallery/tr-turkey-classic/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej TR Turkey Classic. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Turkey Classic. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("tr-turkey-classic", "Turkey Classic"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "nz-new-zealand-north-south",
     code: "NZ",
-    title: "NZ New Zealand North & South",
+    title: "New Zealand North & South",
     description:
       "Lihat suasana perjalanan New Zealand North & South, gambar peserta dan tempat lawatan bersama Nusatravel.",
     coverImage: "/gallery/nz-new-zealand-north-south/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej NZ New Zealand North & South. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej New Zealand North & South. Boleh share tarikh dan harga terkini?",
     images: createPackageImages(
       "nz-new-zealand-north-south",
       "New Zealand North & South",
@@ -341,24 +341,24 @@ export const galleries: GalleryPackage[] = [
   {
     slug: "it-italy",
     code: "IT",
-    title: "IT Italy",
+    title: "Italy",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana trip Italy bersama Nusatravel.",
     coverImage: "/gallery/it-italy/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej IT Italy. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Italy. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("it-italy", "Italy"),
     testimonials: defaultTestimonials,
   },
   {
     slug: "kr-korea",
     code: "KR",
-    title: "KR Korea",
+    title: "Korea",
     description:
       "Lihat suasana trip Korea, gambar peserta, makanan dan tempat lawatan bersama Nusatravel.",
     coverImage: "/gallery/kr-korea/cover.jpg",
     whatsappText:
-      "Hi Nusatravel, saya berminat dengan pakej KR Korea. Boleh share tarikh dan harga terkini?",
+      "Hi Nusatravel, saya berminat dengan pakej Korea. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("kr-korea", "Korea"),
     testimonials: defaultTestimonials,
   },

@@ -24,14 +24,9 @@ export default function PackageListCard({ packageData }: PackageListCardProps) {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="mb-1 flex items-center gap-2">
-          <span className="inline-flex items-center rounded-md bg-[#fef2f2] px-2 py-0.5 text-[11px] font-semibold tracking-wide text-[#dc2626]">
-            {packageData.code}
-          </span>
-          <span className="text-xs text-[#9ca3af]">{photoCount} foto</span>
-        </div>
+        <span className="text-xs text-[#9ca3af]">{photoCount} foto</span>
 
-        <h2 className="truncate text-[15px] font-semibold text-[#111111] sm:text-base">
+        <h2 className="mt-0.5 truncate text-[15px] font-semibold text-[#111111] sm:text-base">
           {packageData.title}
         </h2>
 

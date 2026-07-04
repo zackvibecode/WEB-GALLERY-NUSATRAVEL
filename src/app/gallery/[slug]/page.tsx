@@ -59,75 +59,66 @@ export default async function GalleryDetailPage({ params }: PageProps) {
       <Header whatsappText={gallery.whatsappText} />
 
       <main className="flex-1 pb-24 lg:pb-0">
-        {/* Hero */}
+        {/* Hero: image/video first, then trip name */}
         <section className="border-b border-[#e5e7eb]">
-          <div className="mx-auto grid max-w-[1200px] gap-8 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-16">
-            <div className="order-2 text-center lg:order-1">
-              <span className="inline-flex items-center rounded-md bg-[#fef2f2] px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-[#dc2626]">
-                {gallery.code}
-              </span>
-
-              <h1 className="mt-3 text-2xl font-extrabold uppercase tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
-                {gallery.title}
-              </h1>
-
-              <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#6b7280] sm:text-base">
-                {gallery.description}
-              </p>
-
-              <div className="mt-5 flex flex-wrap justify-center gap-2">
-                {trustBadges.map((badge) => (
-                  <span
-                    key={badge}
-                    className="inline-flex items-center rounded-full border border-[#e5e7eb] bg-white px-3 py-1 text-xs font-medium text-[#6b7280]"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                <WhatsAppButton
-                  text={gallery.whatsappText}
-                  fullWidth
-                  className="sm:w-auto"
-                />
-                {gallery.pdfUrl ? (
-                  <a
-                    href={gallery.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center rounded-xl border border-[#e5e7eb] bg-white px-5 py-3 text-sm font-semibold text-[#111111] transition-colors hover:bg-[#fafafa] sm:w-auto"
-                  >
-                    Download Itinerary PDF
-                  </a>
-                ) : null}
-              </div>
+          <div className="mx-auto flex max-w-[1200px] flex-col items-center px-4 py-8 text-center sm:px-6 sm:py-12 lg:py-16">
+            <div className="relative aspect-[4/3] w-full max-w-3xl overflow-hidden rounded-2xl border border-[#e5e7eb] bg-[#fafafa] sm:aspect-[16/10]">
+              <SafeImage
+                src={gallery.coverImage}
+                alt={gallery.title}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 768px"
+              />
             </div>
 
-            <div className="order-1 lg:order-2">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-[#e5e7eb] bg-[#fafafa] sm:aspect-[16/10]">
-                <SafeImage
-                  src={gallery.coverImage}
-                  alt={gallery.title}
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 560px"
+            {gallery.tiktokVideoId ? (
+              <div className="mt-8 w-full">
+                <TikTokEmbed
+                  videoId={gallery.tiktokVideoId}
+                  title={`Video Trip ${gallery.title}`}
                 />
               </div>
+            ) : null}
+
+            <h1 className="mt-8 text-2xl font-extrabold uppercase tracking-tight text-[#111111] sm:text-3xl lg:text-4xl">
+              {gallery.title}
+            </h1>
+
+            <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-[#6b7280] sm:text-base">
+              {gallery.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {trustBadges.map((badge) => (
+                <span
+                  key={badge}
+                  className="inline-flex items-center rounded-full border border-[#e5e7eb] bg-white px-3 py-1 text-xs font-medium text-[#6b7280]"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:max-w-none sm:flex-row sm:justify-center">
+              <WhatsAppButton
+                text={gallery.whatsappText}
+                fullWidth
+                className="sm:w-auto"
+              />
+              {gallery.pdfUrl ? (
+                <a
+                  href={gallery.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center rounded-xl border border-[#e5e7eb] bg-white px-5 py-3 text-sm font-semibold text-[#111111] transition-colors hover:bg-[#fafafa] sm:w-auto"
+                >
+                  Download Itinerary PDF
+                </a>
+              ) : null}
             </div>
           </div>
         </section>
-
-        {/* TikTok Video */}
-        {gallery.tiktokVideoId ? (
-          <section className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-14">
-            <TikTokEmbed
-              videoId={gallery.tiktokVideoId}
-              title={`Video Trip ${gallery.title}`}
-            />
-          </section>
-        ) : null}
 
         {/* Gallery */}
         <section className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-14">
