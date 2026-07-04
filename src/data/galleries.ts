@@ -28,42 +28,42 @@ function createPackageImages(
 ): GalleryImage[] {
   return [
     {
-      src: `/gallery/${slug}/peserta-01.webp`,
+      src: `/gallery/${slug}/peserta-01.jpg`,
       category: "Gambar Peserta",
       caption: `Gambar peserta Nusatravel semasa trip ${destination}`,
     },
     {
-      src: `/gallery/${slug}/peserta-02.webp`,
+      src: `/gallery/${slug}/peserta-02.jpg`,
       category: "Gambar Peserta",
       caption: "Suasana peserta sepanjang perjalanan",
     },
     {
-      src: `/gallery/${slug}/tempat-lawatan-01.webp`,
+      src: `/gallery/${slug}/tempat-lawatan-01.jpg`,
       category: "Tempat Lawatan",
       caption: "Antara tempat lawatan dalam itinerary",
     },
     {
-      src: `/gallery/${slug}/tempat-lawatan-02.webp`,
+      src: `/gallery/${slug}/tempat-lawatan-02.jpg`,
       category: "Tempat Lawatan",
       caption: "Tempat menarik untuk bergambar",
     },
     {
-      src: `/gallery/${slug}/tempat-lawatan-03.webp`,
+      src: `/gallery/${slug}/tempat-lawatan-03.jpg`,
       category: "Tempat Lawatan",
       caption: "Suasana lawatan peserta Nusatravel",
     },
     {
-      src: `/gallery/${slug}/makanan-01.webp`,
+      src: `/gallery/${slug}/makanan-01.jpg`,
       category: "Makanan Halal",
       caption: "Makanan disediakan mengikut pakej",
     },
     {
-      src: `/gallery/${slug}/suasana-01.webp`,
+      src: `/gallery/${slug}/suasana-01.jpg`,
       category: "Suasana Trip",
       caption: "Suasana perjalanan bersama peserta",
     },
     {
-      src: `/gallery/${slug}/suasana-02.webp`,
+      src: `/gallery/${slug}/suasana-02.jpg`,
       category: "Suasana Trip",
       caption: "Moment sepanjang trip",
     },
@@ -278,7 +278,7 @@ export const galleries: GalleryPackage[] = [
     title: "ID TransJava",
     description:
       "Lihat suasana perjalanan TransJava, gambar peserta dan tempat lawatan bersama Nusatravel.",
-    coverImage: "/gallery/id-transjava/cover.webp",
+    coverImage: "/gallery/id-transjava/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej ID TransJava. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("id-transjava", "TransJava"),
@@ -290,7 +290,7 @@ export const galleries: GalleryPackage[] = [
     title: "CN China 4 Wilayah",
     description:
       "Lihat gambar peserta dan suasana trip China 4 Wilayah bersama Nusatravel.",
-    coverImage: "/gallery/cn-china-4-wilayah/cover.webp",
+    coverImage: "/gallery/cn-china-4-wilayah/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej CN China 4 Wilayah. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-china-4-wilayah", "China 4 Wilayah"),
@@ -302,7 +302,7 @@ export const galleries: GalleryPackage[] = [
     title: "CN Wilayah Yunnan",
     description:
       "Lihat suasana trip Yunnan, tempat lawatan dan gambar peserta bersama Nusatravel.",
-    coverImage: "/gallery/cn-wilayah-yunnan/cover.webp",
+    coverImage: "/gallery/cn-wilayah-yunnan/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej CN Wilayah Yunnan. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-wilayah-yunnan", "Yunnan"),
@@ -314,7 +314,7 @@ export const galleries: GalleryPackage[] = [
     title: "CN Sichuan Chengdu",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana perjalanan Sichuan Chengdu bersama Nusatravel.",
-    coverImage: "/gallery/cn-sichuan-chengdu/cover.webp",
+    coverImage: "/gallery/cn-sichuan-chengdu/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej CN Sichuan Chengdu. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-sichuan-chengdu", "Sichuan Chengdu"),
@@ -326,7 +326,7 @@ export const galleries: GalleryPackage[] = [
     title: "CN Xian Lanzhou",
     description:
       "Lihat suasana trip Xian Lanzhou, gambar peserta dan tempat lawatan bersama Nusatravel.",
-    coverImage: "/gallery/cn-xian-lanzhou/cover.webp",
+    coverImage: "/gallery/cn-xian-lanzhou/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej CN Xian Lanzhou. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("cn-xian-lanzhou", "Xian Lanzhou"),
@@ -338,7 +338,7 @@ export const galleries: GalleryPackage[] = [
     title: "VN Trans Vietnam",
     description:
       "Lihat gambar peserta dan suasana perjalanan Trans Vietnam bersama Nusatravel.",
-    coverImage: "/gallery/vn-trans-vietnam/cover.webp",
+    coverImage: "/gallery/vn-trans-vietnam/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej VN Trans Vietnam. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("vn-trans-vietnam", "Trans Vietnam"),
@@ -350,7 +350,7 @@ export const galleries: GalleryPackage[] = [
     title: "TH Thailand 5 Wilayah",
     description:
       "Lihat suasana trip Thailand 5 Wilayah, gambar peserta dan tempat lawatan bersama Nusatravel.",
-    coverImage: "/gallery/th-thailand-5-wilayah/cover.webp",
+    coverImage: "/gallery/th-thailand-5-wilayah/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej TH Thailand 5 Wilayah. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("th-thailand-5-wilayah", "Thailand 5 Wilayah"),
@@ -362,7 +362,7 @@ export const galleries: GalleryPackage[] = [
     title: "TR Turkey Classic",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana perjalanan Turkey Classic bersama Nusatravel.",
-    coverImage: "/gallery/tr-turkey-classic/cover.webp",
+    coverImage: "/gallery/tr-turkey-classic/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej TR Turkey Classic. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("tr-turkey-classic", "Turkey Classic"),
@@ -374,7 +374,7 @@ export const galleries: GalleryPackage[] = [
     title: "NZ New Zealand North & South",
     description:
       "Lihat suasana perjalanan New Zealand North & South, gambar peserta dan tempat lawatan bersama Nusatravel.",
-    coverImage: "/gallery/nz-new-zealand-north-south/cover.webp",
+    coverImage: "/gallery/nz-new-zealand-north-south/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej NZ New Zealand North & South. Boleh share tarikh dan harga terkini?",
     images: createPackageImages(
@@ -389,7 +389,7 @@ export const galleries: GalleryPackage[] = [
     title: "IT Italy",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana trip Italy bersama Nusatravel.",
-    coverImage: "/gallery/it-italy/cover.webp",
+    coverImage: "/gallery/it-italy/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej IT Italy. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("it-italy", "Italy"),
@@ -401,7 +401,7 @@ export const galleries: GalleryPackage[] = [
     title: "KR Korea",
     description:
       "Lihat suasana trip Korea, gambar peserta, makanan dan tempat lawatan bersama Nusatravel.",
-    coverImage: "/gallery/kr-korea/cover.webp",
+    coverImage: "/gallery/kr-korea/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej KR Korea. Boleh share tarikh dan harga terkini?",
     images: createPackageImages("kr-korea", "Korea"),
