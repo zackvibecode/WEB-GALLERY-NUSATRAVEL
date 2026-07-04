@@ -20,10 +20,10 @@ export default function WhatsAppButton({
 
   const variantClasses = {
     primary:
-      "bg-[#111111] text-white hover:bg-[#000000] border border-[#111111]",
+      "bg-[#25D366] text-white hover:bg-[#20BD5A] border border-[#25D366]",
     secondary:
       "bg-white text-[#111111] hover:bg-[#fafafa] border border-[#e5e7eb]",
-    dark: "bg-[#dc2626] text-white hover:bg-[#b91c1c] border border-[#dc2626]",
+    dark: "bg-[#128C7E] text-white hover:bg-[#0E7A6E] border border-[#128C7E]",
   };
 
   return (

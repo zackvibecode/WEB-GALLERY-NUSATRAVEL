@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
 export default function NotFound() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
@@ -26,7 +24,6 @@ export default function NotFound() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }

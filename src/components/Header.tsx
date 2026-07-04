@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
@@ -17,14 +18,18 @@ export default function Header({
   return (
     <header className="sticky top-0 z-40 border-b border-[#e5e7eb] bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-[1200px] items-center justify-between px-4 sm:h-16 sm:px-6">
-        <Link href="/" className="flex items-center gap-1.5">
+        <Link href="/" className="flex items-center gap-2.5">
+          <Image
+            src={siteConfig.logoSrc}
+            alt={siteConfig.brandName}
+            width={36}
+            height={36}
+            className="h-8 w-8 rounded-full object-cover sm:h-9 sm:w-9"
+            priority
+          />
           <span className="text-base font-semibold tracking-tight text-[#111111] sm:text-lg">
             {siteConfig.brandName}
           </span>
-          <span
-            className="mt-0.5 h-1.5 w-1.5 rounded-full bg-[#dc2626]"
-            aria-hidden="true"
-          />
         </Link>
 
         <nav className="flex items-center gap-3 sm:gap-5">
@@ -46,7 +51,7 @@ export default function Header({
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-lg bg-[#111111] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-black sm:px-4 sm:text-sm"
+            className="inline-flex items-center justify-center rounded-lg bg-[#25D366] px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#20BD5A] sm:px-4 sm:text-sm"
           >
             WhatsApp
           </a>

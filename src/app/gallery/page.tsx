@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import PackageListCard from "@/components/PackageListCard";
+import ConsultantCard from "@/components/ConsultantCard";
 import { getAllGalleries } from "@/lib/gallery";
 
 export const metadata: Metadata = {
@@ -34,10 +34,13 @@ export default function GalleryListPage() {
               <PackageListCard key={gallery.slug} packageData={gallery} />
             ))}
           </div>
+
+          <div className="mt-10">
+            <ConsultantCard />
+          </div>
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }

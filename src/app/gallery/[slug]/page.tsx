@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import SafeImage from "@/components/SafeImage";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GalleryGrid from "@/components/GalleryGrid";
 import TrustSection from "@/components/TrustSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import ConsultantCard from "@/components/ConsultantCard";
 import { getAllGalleries, getGalleryBySlug } from "@/lib/gallery";
 
 type PageProps = {
@@ -135,28 +135,12 @@ export default async function GalleryDetailPage({ params }: PageProps) {
           </section>
         ) : null}
 
-        {/* Bottom CTA */}
+        {/* Travel Consultant */}
         <section className="mx-auto max-w-[1200px] px-4 pb-10 sm:px-6 sm:pb-16">
-          <div className="rounded-[20px] border border-[#e5e7eb] bg-white px-5 py-8 text-center sm:px-10 sm:py-10">
-            <h2 className="text-xl font-semibold tracking-tight text-[#111111] sm:text-2xl">
-              Berminat dengan pakej ini?
-            </h2>
-            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-[#6b7280]">
-              Tekan butang di bawah untuk tanya tarikh, harga terkini dan
-              kekosongan seat.
-            </p>
-            <div className="mt-6 flex justify-center">
-              <WhatsAppButton
-                text={gallery.whatsappText}
-                fullWidth
-                className="sm:w-auto"
-              />
-            </div>
-          </div>
+          <ConsultantCard whatsappText={gallery.whatsappText} />
         </section>
       </main>
 
-      <Footer />
       <StickyMobileCTA whatsappText={gallery.whatsappText} />
     </div>
   );
