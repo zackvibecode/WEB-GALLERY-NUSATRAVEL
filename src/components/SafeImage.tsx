@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type SafeImageProps = {
   src: string;
@@ -48,6 +48,20 @@ export default function SafeImage({
 }: SafeImageProps) {
   const [hasError, setHasError] = useState(false);
 
+  useEffect(() => {
+    setHasError(false);
+
+    const probe = new window.Image();
+    probe.onload = () => setHasError(false);
+    probe.onerror = () => setHasError(true);
+    probe.src = src;
+
+    return () => {
+      probe.onload = null;
+      probe.onerror = null;
+    };
+  }, [src]);
+
   if (hasError) {
     return <Placeholder alt={alt} fill={fill} className={className} />;
   }
@@ -55,9 +69,11 @@ export default function SafeImage({
   if (fill) {
     return (
       <Image
+        key={src}
         src={src}
         alt={alt}
         fill
+        unoptimized
         className={`object-cover ${className}`}
         priority={priority}
         sizes={sizes}
@@ -68,10 +84,12 @@ export default function SafeImage({
 
   return (
     <Image
+      key={src}
       src={src}
       alt={alt}
       width={width ?? 800}
       height={height ?? 600}
+      unoptimized
       className={`h-auto w-full object-cover ${className}`}
       priority={priority}
       sizes={sizes}

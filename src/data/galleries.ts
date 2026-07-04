@@ -83,12 +83,94 @@ export const galleries: GalleryPackage[] = [
     title: "ID Makassar",
     description:
       "Lihat gambar peserta, tempat lawatan dan suasana trip Makassar bersama Nusatravel.",
-    coverImage: "/gallery/id-makassar/cover.webp",
+    coverImage: "/gallery/id-makassar/cover.jpg",
     whatsappText:
       "Hi Nusatravel, saya berminat dengan pakej ID Makassar. Boleh share tarikh dan harga terkini?",
-    images: createPackageImages("id-makassar", "Makassar"),
+    images: [
+      {
+        src: "/gallery/id-makassar/peserta-01.jpg",
+        category: "Gambar Peserta",
+        caption: "Gambar kumpulan peserta Nusatravel di Masjid 99 Kubah",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-02.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta bergambar di hadapan Masjid 99 Kubah",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-03.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta di dalam Masjid 99 Kubah",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-04.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta menikmati pemandangan sepanjang trip",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-05.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta menaiki bot di Rammang-Rammang",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-06.jpg",
+        category: "Gambar Peserta",
+        caption: "Gambar kumpulan peserta semasa trip bot malam",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-07.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta menikmati sunset di atas bot",
+      },
+      {
+        src: "/gallery/id-makassar/peserta-08.jpg",
+        category: "Gambar Peserta",
+        caption: "Peserta semasa cruise di Makassar",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-01.jpg",
+        category: "Tempat Lawatan",
+        caption: "Lawatan ke Kampoeng Karst Rammang-Rammang, Maros",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-02.jpg",
+        category: "Tempat Lawatan",
+        caption: "Bot menyusuri kawasan karst Rammang-Rammang",
+      },
+      {
+        src: "/gallery/id-makassar/tempat-lawatan-03.jpg",
+        category: "Tempat Lawatan",
+        caption: "Lawatan bot di kawasan hijau Makassar",
+      },
+      {
+        src: "/gallery/id-makassar/makanan-01.jpg",
+        category: "Makanan Halal",
+        caption: "Jamuan bersama peserta di atas bot",
+      },
+      {
+        src: "/gallery/id-makassar/makanan-02.jpg",
+        category: "Makanan Halal",
+        caption: "Makanan disediakan semasa trip bot Makassar",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-01.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana cruise di atas bot Phinisi",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-02.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana golden hour semasa trip bot",
+      },
+      {
+        src: "/gallery/id-makassar/suasana-03.jpg",
+        category: "Suasana Trip",
+        caption: "Suasana perjalanan bersama peserta Nusatravel",
+      },
+    ],
     testimonials: defaultTestimonials,
   },
+
   {
     slug: "id-transjava",
     code: "ID",
